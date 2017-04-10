@@ -13,6 +13,7 @@ export default styled.button`
   background: #F9A076;
   transition: all 150ms ease-in-out;
   cursor: pointer;
+  width: 200px;
   &:hover{
     color: #FFF;
   }

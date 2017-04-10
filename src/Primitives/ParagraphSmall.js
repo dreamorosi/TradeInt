@@ -8,5 +8,5 @@ export default styled.p`
   line-height: 24px;
   text-align: center;
   padding: 0;
-  margin: 15px 10px;
+  margin: ${props => props.margin !== undefined ? props.margin + 'px' : '15px'} 10px 0 10px;
 `

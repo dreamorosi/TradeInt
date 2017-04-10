@@ -7,4 +7,5 @@ export default styled.h1`
   font-size: 44px;
   line-height: 48px;
   text-align: center;
+  margin: 10px 0;
 `

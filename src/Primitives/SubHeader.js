@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
-export default styled.p`
+export default styled.h2`
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
-  font-size: 16px;
-  line-height: 24px;
-  opacity: .8;
-  text-align: center;
-  margin: 0;
+  font-size: 28px;
+  line-height: 45px;
+  opacity: 0.8;
 `
