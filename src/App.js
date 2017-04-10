@@ -19,7 +19,8 @@ import Why from './Components/Why'
 import Slider from './Components/Slider'
 import Card from './Components/Card'
 import Stats from './Components/Stats'
-import Footer from './Components/Footer'
+import Copyright from './Components/Copyright'
+import Mail from './Components/Mail'
 
 const Wrapper = styled.div`
   display: flex;
@@ -141,10 +142,10 @@ class App extends Component {
         </Row>
         <Row padding='160px 0 60px 0'>
           <Col width='50%' align='start'>
-            <Footer>{footer.copyright}</Footer>
+            <Copyright>{footer.copyright}</Copyright>
           </Col>
           <Col width='50%' align='end'>
-            <Footer mail>{footer.mail}</Footer>
+            <Mail href={`mailto:${footer.mail}`}>{footer.mail}</Mail>
           </Col>
         </Row>
       </Wrapper>
