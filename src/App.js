@@ -21,6 +21,7 @@ import Why from './Components/Why'
 import Slider from './Components/Slider'
 import Card from './Components/Card'
 import Stats from './Components/Stats'
+import Form from './Components/Form'
 import Copyright from './Components/Copyright'
 import Mail from './Components/Mail'
 
@@ -56,7 +57,7 @@ class App extends Component {
   }
 
   render () {
-    const { hero, headings, why, cards, stats, footer } = this.strings
+    const { hero, headings, why, cards, stats, form, footer } = this.strings
     return (
       <Wrapper>
         <Row>
@@ -70,7 +71,7 @@ class App extends Component {
         <Row padding='50px 0 0 0' style={{minHeight: 588 + 'px'}}>
           <Col width='66%' align='start'>
             <QueueAnim>
-              <Hero header={hero.header} subheader={hero.subheader} key='1' />
+              <Hero header={hero.header} subheader={hero.subheader} button={form.button} key='1' />
             </QueueAnim>
           </Col>
           <Col width='33%'>
@@ -203,9 +204,9 @@ class App extends Component {
         {/* Signup Form */}
         <Row padding='70px 0 0 0'>
           <Col id='signup'>
-            <ScrollOverPack playScale='25vh'>
+            <ScrollOverPack playScale='15vh'>
               <QueueAnim key='0'>
-                <small key='1'>I'm a div</small>
+                <Form thanks={form.thanks} textInput={form.textInput} emailInput={form.emailInput} button={form.button} key='1' />
               </QueueAnim>
             </ScrollOverPack>
           </Col>

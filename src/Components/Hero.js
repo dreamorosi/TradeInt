@@ -18,7 +18,7 @@ export default (props) => {
       <Header>{props.header}</Header>
       <SubHeader>{props.subheader.split('~').map((bit, key) => <span key={key}>{bit}<br /></span>)}</SubHeader>
       <Link to='signup' duration={1500}>
-        <Button onClick={handleClick}>Subscribe</Button>
+        <Button onClick={handleClick}>{props.button}</Button>
       </Link>
     </Hero>
   )

@@ -72,6 +72,12 @@ export default {
         text: 'Sorry, we have had way too~much coffee to remember.'
       }
     ],
+    form: {
+      thanks: 'Thank you for subscribing, we\'ll be in touch soon.',
+      textInput: 'Full Name',
+      emailInput: 'Email',
+      button: 'Subscribe'
+    },
     footer: {
       copyright: 'Copyright © 2017 TradeInt / All rights reserved.',
       mail: 'hello@tradeint.es'
@@ -150,6 +156,12 @@ export default {
         text: 'Disculpa, hemos tomado~demasiado café para recordarlo.'
       }
     ],
+    form: {
+      thanks: 'Gracias por suscribirse, nos pondremos en contacto pronto.',
+      textInput: 'Nombre Completo',
+      emailInput: 'Email',
+      button: 'Subscríbete'
+    },
     footer: {
       copyright: 'Copyright © 2017 TradeInt / Todos los derechos reservados.',
       mail: 'hello@tradeint.es'
