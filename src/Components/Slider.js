@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 import ArrowIcon from '../Primitives/ArrowIcon'
-import Browser from '../images/Browser.png'
+import Browser from '../images/Browser1.png'
+import Browser2 from '../images/Browser2.png'
 
 const SliderContainer = styled.div`
   height: 520px;
@@ -78,7 +79,7 @@ class Slider extends Component {
   }
 
   render () {
-    let slides = [Browser, Browser]
+    let slides = [Browser, Browser2]
     return (
       <SliderContainer>
         <SliderControl>
