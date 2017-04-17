@@ -79,79 +79,79 @@ export default {
   },
   es: {
     hero: {
-      header: 'TradeInt Es',
-      subheader: 'The business network where~suppliers and distributors come together.'
+      header: 'TradeInt',
+      subheader: 'La red empresarial en la que~confluyen proveedores con distribudores.'
     },
     headings: [
       {
-        title: 'Why TradeInt?',
-        subtitle: 'TradeInt joins international supply and demand between suppliers and distributors.'
+        title: '¿Por qué TradeInt?',
+        subtitle: 'TradeInt conecta la oferta y la demanda internacional entre proveedores y distribuidores.'
       },
       {
-        title: 'Prototype',
-        subtitle: 'Have a look at TradeInt\'s business network prototype.'
+        title: 'Prototipo',
+        subtitle: 'Visualiza el prototipo actual de la red empresarial de TradeInt.'
       },
       {
-        title: 'Team',
-        subtitle: 'Our team provides a solution to a business need identified in our professional lives.'
+        title: 'Equipo',
+        subtitle: 'Nuestro equipo ha detectado una necesidad empresarial en nuestra vida laboral.'
       },
       {
-        title: 'Be Notified!',
-        subtitle: 'Subscribe to receive our newsletter to learn more about TradeInt\'s progression.'
+        title: '¡Mantente informado!',
+        subtitle: 'Subscríbete para recibir información sobre la evolución de TradeInt.'
       }
     ],
     why: [
       {
-        title: 'Find your ideal~business partner',
-        text: 'Identify and communicate with fitting~partners through our business network.'
+        title: 'Encuentra tu~partner ideal',
+        text: 'Identifica y comunícate con socios~potenciales a través de la red~empresarial de TradeInt.'
       },
       {
-        title: 'Make your move to~international expansion',
-        text: 'Use our Marketplace tool as a meeting~point for suppliers and distributors.'
+        title: 'Alcanza mercados~potenciales',
+        text: 'Utiliza nuestra herramienta~Marketplace como punto de encuentro~entre proveedores y distribuidores.'
       },
       {
-        title: 'Connect your business~to the digital world',
-        text: 'Reach out easily and actively~beyond the traditional means.'
+        title: 'Conecta tu empresa~al mundo digital',
+        text: 'Agiliza y dinamiza las comunicaciones~de tu empresa más allá de las~vías tradicionales.'
       }
     ],
     cards: [
       {
         title: 'SANTIAGO GARCÍA',
-        text: 'Responsible for supervising~TradeInt’s daily operations, general~performance and financing~planning.'
+        text: 'Director de operaciones de~TradeInt. Responsable de~supervisar el desempeño general~y las finanzas de TradeInt.'
       },
       {
         title: 'M. CONCEPCIÓN GÓMEZ',
-        text: 'Head of communications and~public relations. Responsible for~TradeInt’s commercial strategy and~development.'
+        text: 'Directora de comunicaciones y~relaciones públicas. Responsable~de la estrategia comercial y del~desarrollo de TradeInt.'
       },
       {
         title: 'ALBERTO FERNÁNDEZ',
-        text: 'Head of the creative team.~Responsible for overseeing all~design and innovation aspects~related to TradeInt’s platforms.'
+        text: 'Director del equipo creativo.~Responsable de las decisiones~creativas de todas las~plataformas de TradeInt.'
       }
     ],
     stats: [
       {
         number: 2500,
-        title: 'hours worked',
-        text: 'Thinking, designing and evaluating is always a challenge.'
+        title: 'horas de trabajo',
+        text: 'Pensar, diseñar y evaluar es~siempre todo un reto.'
       },
       {
         number: 225,
-        title: 'inspiring moments',
-        text: 'Inspiration sometimes came at the most unexpected moments.'
+        title: 'momentos inspiradores',
+        text: 'La inspiración suele venir en los~momentos más inesperados.'
       },
       {
         number: 85,
-        title: 'problems solved',
-        text: 'Viewing problems as challenges helped us find solutions.'
+        title: 'problemas resueltos',
+        text: 'Ver los problemas como retos~nos motiva a resolverlos.'
       },
       {
         number: '∞',
-        title: 'coffee cups',
-        text: 'Sorry, we have had way too much coffee to remember.'
+        title: 'tazas de café',
+        text: 'Disculpa, hemos tomado~demasiado café para recordarlo.'
       }
     ],
     footer: {
-      copyright: 'Copyright © 2017 TradeInt / All rights reserved.',
+      copyright: 'Copyright © 2017 TradeInt / Todos los derechos reservados.',
       mail: 'hello@tradeint.es'
     }
   }

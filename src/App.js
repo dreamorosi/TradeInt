@@ -140,21 +140,21 @@ class App extends Component {
         </Row>
         <Row style={{minHeight: 259 + 'px'}}>
           <Col width='33%'>
-            <ScrollOverPack playScale='25vh'>
+            <ScrollOverPack playScale='25vh' style={{width: 100 + '%'}}>
               <QueueAnim key='0'>
                 <Card title={cards[0].title} text={cards[0].text} position={1} key='1' />
               </QueueAnim>
             </ScrollOverPack>
           </Col>
           <Col width='33%'>
-            <ScrollOverPack playScale='25vh'>
+            <ScrollOverPack playScale='25vh' style={{width: 100 + '%'}}>
               <QueueAnim key='0' delay='200'>
                 <Card title={cards[1].title} text={cards[1].text} position={2} key='1' />
               </QueueAnim>
             </ScrollOverPack>
           </Col>
           <Col width='33%'>
-            <ScrollOverPack playScale='25vh'>
+            <ScrollOverPack playScale='25vh' style={{width: 100 + '%'}}>
               <QueueAnim key='0' delay='300'>
                 <Card title={cards[2].title} text={cards[2].text} position={3} key='1' />
               </QueueAnim>
