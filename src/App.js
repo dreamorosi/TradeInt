@@ -106,7 +106,7 @@ class App extends Component {
           </Col>
           <Col width='33%'>
             <ScrollOverPack playScale='25vh'>
-              <QueueAnim delay='300' key='0' onEnd={() => console.log('view')}>
+              <QueueAnim delay='300' key='0' onEnd={() => window.ga('send', 'event', { eventCategory: 'Scrolled to Why section', eventAction: 'Scroll' })}>
                 <Why title={why[2].title} text={why[2].text} key='1' />
               </QueueAnim>
             </ScrollOverPack>

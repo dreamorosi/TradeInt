@@ -73,7 +73,7 @@ export default {
       }
     ],
     form: {
-      thanks: 'Thank you for subscribing, we\'ll be in touch soon.',
+      thanks: 'Thank you for subscribing to TradeInt\'s newsletter. We will be in touch with you very soon',
       textInput: 'Full Name',
       emailInput: 'Email',
       button: 'Subscribe'
@@ -157,7 +157,7 @@ export default {
       }
     ],
     form: {
-      thanks: 'Gracias por suscribirse, nos pondremos en contacto pronto.',
+      thanks: 'Gracias por suscribirse al boletín de TradeInt. Estaremos en contacto con usted muy pronto.',
       textInput: 'Nombre Completo',
       emailInput: 'Email',
       button: 'Subscríbete'
