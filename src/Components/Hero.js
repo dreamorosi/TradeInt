@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import ScrollAnim from 'rc-scroll-anim'
+const Link = ScrollAnim.Link
 
 import Header from '../Primitives/Header'
 import SubHeader from '../Primitives/SubHeader'
@@ -15,7 +17,9 @@ export default (props) => {
     <Hero>
       <Header>{props.header}</Header>
       <SubHeader>{props.subheader.split('~').map((bit, key) => <span key={key}>{bit}<br /></span>)}</SubHeader>
-      <Button onClick={handleClick}>Subscribe</Button>
+      <Link to='signup' duration={1500}>
+        <Button onClick={handleClick}>Subscribe</Button>
+      </Link>
     </Hero>
   )
 }
