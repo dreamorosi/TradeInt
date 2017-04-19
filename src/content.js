@@ -86,7 +86,7 @@ export default {
   es: {
     hero: {
       header: 'TradeInt',
-      subheader: 'La red empresarial en la que~confluyen proveedores con distribudores.'
+      subheader: 'La red empresarial en la que~confluyen proveedores con distribuidores.'
     },
     headings: [
       {
@@ -160,7 +160,7 @@ export default {
       thanks: 'Gracias por suscribirse al boletín de TradeInt. Estaremos en contacto con usted muy pronto.',
       textInput: 'Nombre Completo',
       emailInput: 'Email',
-      button: 'Subscríbete'
+      button: 'Suscríbete'
     },
     footer: {
       copyright: 'Copyright © 2017 TradeInt / Todos los derechos reservados.',

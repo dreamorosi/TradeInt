@@ -57,8 +57,13 @@ export default class Form extends React.Component {
     if (!text.hasError && !email.hasError) {
       let mail = `email=${encodeURIComponent(email.value)}`
       let fullName = `fullName=${encodeURIComponent(text.value)}`
-      let url = `http://192.185.63.170/dev/?${mail}&${fullName}`
-      window.fetch(url).then(response => response.json())
+      let url = `https://dev.dreamorosi.com/tradeInt_mailer/?${mail}&${fullName}`
+      var myInit = {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'default'
+      }
+      window.fetch(url, myInit).then(response => response.json())
       .then(data => {
         let newState = this.state
         newState.sent = true

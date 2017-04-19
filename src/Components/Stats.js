@@ -20,8 +20,10 @@ export default (props) => {
   const renderNumber = () => {
     if (props.number === '∞') {
       return props.number
+    } else if (props.number > 1000) {
+      return <AnimateNumber number={props.number} speed={100} step={100} />
     } else {
-      return <AnimateNumber number={props.number} speed={5} />
+      return <AnimateNumber number={props.number} speed={10} />
     }
   }
 
