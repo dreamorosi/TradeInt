@@ -12,6 +12,9 @@ const Stat = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 800px) {
+    margin-top: 50px;
+  }
 `
 
 export default (props) => {

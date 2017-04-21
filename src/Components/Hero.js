@@ -8,6 +8,11 @@ import Scroll from 'react-scroll'
 const scroll = Scroll.animateScroll
 
 const Hero = styled.div`
+  & button {
+    @media (max-width: 800px) {
+      margin-bottom: 50px;
+    }
+  }
 `
 
 export default (props) => {

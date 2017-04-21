@@ -10,18 +10,27 @@ const SliderContainer = styled.div`
   margin: 0 auto;
   overflow: hidden;
   display: flex;
+  @media (max-width: 800px) {
+    height: auto
+  }
 `
 
 const SliderContent = styled.div`
   width: 835px;
   margin: 0 auto;
-  z-index: 1
+  z-index: 1;
+  @media (max-width: 800px) {
+    width: 300px
+  }
 `
 
 const SliderControl = styled.div`
   z-index: 99;
   display: flex;
   align-items: center;
+  @media (max-width: 800px) {
+    width: 50px;
+  }
 `
 
 const SliderDeck = styled.ul`
@@ -32,15 +41,24 @@ const SliderDeck = styled.ul`
   margin: 0;
   padding: 0;
   width: 1670px;
+  @media (max-width: 800px) {
+    width: 600px;
+  }
   overflow-x: hidden;
 `
 
 const Slide = styled.li`
   display: inline-block;
   width: 835px;
+  @media (max-width: 800px) {
+    width: 300px
+  }
   height: auto;
   & > img {
     width: 835px;
+    @media (max-width: 800px) {
+      width: 300px
+    }
     display: ${props => props.current ? 'block' : 'none'};
     margin: 0 auto;
   }

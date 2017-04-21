@@ -75,7 +75,7 @@ class App extends Component {
             <Language lang={this.state.lang} handleClick={this.handleChangeLang} />
           </Col>
         </Row>
-        <Row padding='50px 0 0 0' style={{minHeight: 588 + 'px'}}>
+        <Row padding='50px 0 0 0'>
           <Col width='66%' align='start'>
             <Hero header={hero.header} subheader={hero.subheader} button={form.button} />
           </Col>
@@ -83,14 +83,14 @@ class App extends Component {
             <Phone src={PhoneSrc} alt='Mobile Screen' />
           </Col>
         </Row>
-        <Row padding='150px 0 60px 0' style={{minHeight: 302 + 'px'}}>
+        <Row padding='150px 0 60px 0'>
           <Col>
             <VisibilitySensor onChange={this.handleScroll}>
               <Heading title={headings[0].title} subtitle={headings[0].subtitle} />
             </VisibilitySensor>
           </Col>
         </Row>
-        <Row style={{minHeight: 193 + 'px'}}>
+        <Row>
           <Col width='33%'>
             <Why title={why[0].title} text={why[0].text} />
           </Col>
@@ -101,22 +101,22 @@ class App extends Component {
             <Why title={why[2].title} text={why[2].text} />
           </Col>
         </Row>
-        <Row padding='200px 0 75px 0' style={{minHeight: 367 + 'px'}}>
+        <Row padding='200px 0 75px 0'>
           <Col>
             <Heading title={headings[1].title} subtitle={headings[1].subtitle} />
           </Col>
         </Row>
-        <Row style={{minHeight: 520 + 'px'}}>
+        <Row>
           <Test>
             <Slider />
           </Test>
         </Row>
-        <Row padding='150px 0 90px 0' style={{minHeight: 332 + 'px'}}>
+        <Row padding='150px 0 90px 0'>
           <Col>
             <Heading title={headings[2].title} subtitle={headings[2].subtitle} />
           </Col>
         </Row>
-        <Row style={{minHeight: 259 + 'px'}}>
+        <Row>
           <Col width='33%'>
             <Card title={cards[0].title} text={cards[0].text} position={1} />
           </Col>
@@ -127,7 +127,7 @@ class App extends Component {
             <Card title={cards[2].title} text={cards[2].text} position={3} />
           </Col>
         </Row>
-        <Row padding='180px 0 0 0' style={{minHeight: 334 + 'px'}}>
+        <Row padding='180px 0 0 0'>
           <Col width='25%'>
             <Stats number={stats[0].number} title={stats[0].title} text={stats[0].text} />
           </Col>
@@ -141,7 +141,7 @@ class App extends Component {
             <Stats number={stats[3].number} title={stats[3].title} text={stats[3].text} infinite />
           </Col>
         </Row>
-        <Row padding='200px 0 0 0' style={{minHeight: 292 + 'px'}}>
+        <Row padding='200px 0 0 0'>
           <Col>
             <Heading title={headings[3].title} subtitle={headings[3].subtitle} />
           </Col>

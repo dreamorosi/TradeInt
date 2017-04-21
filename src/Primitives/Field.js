@@ -14,7 +14,12 @@ const Input = styled.input`
   border-radius: 4px;
   font-size: 15px;
   color: #fff;
-  margin-right: 28px;
+  @media (min-width: 800px) {
+    margin-right: 28px;
+  }
+  @media (max-width: 800px) {
+    margin-bottom: 15px;
+  }
 `
 
 export default class Field extends React.Component {
