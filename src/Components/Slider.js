@@ -61,8 +61,10 @@ class Slider extends Component {
 
   goTo (index) {
     // filter invalid indexes
-    if (index < 0 || index > 1) {
+    if (index < 0) {
       return
+    } else if (index > 1) {
+      index = 0
     }
     this.setState({
       currentIndex: index,
