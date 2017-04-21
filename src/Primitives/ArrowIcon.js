@@ -9,6 +9,6 @@ export default styled.div`
   transform: rotate(${props => props.right !== undefined ? '180deg' : '0deg'});
   cursor: pointer;
   @media (max-width: 800px) {
-    transform: scale(.8) rotate(${props => props.right !== undefined ? '180deg' : '0deg'});
+    display: none;
   }
 `

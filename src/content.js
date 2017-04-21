@@ -86,7 +86,7 @@ export default {
   es: {
     hero: {
       header: 'TradeInt',
-      subheader: 'La red empresarial en la que~confluyen proveedores con distribuidores.'
+      subheader: 'La red empresarial en la que~confluyen proveedores y distribuidores.'
     },
     headings: [
       {
