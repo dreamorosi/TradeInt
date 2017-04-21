@@ -39,7 +39,7 @@ export default {
     cards: [
       {
         title: 'SANTIAGO GARCÍA',
-        text: 'Responsible for supervising~TradeInt’s daily operations, general~performance and financing~planning.'
+        text: 'Head of operations.~Responsible for TradeInt\'s general management~and financial planning.'
       },
       {
         title: 'M. CONCEPCIÓN GÓMEZ',
@@ -73,7 +73,7 @@ export default {
       }
     ],
     form: {
-      thanks: 'Thank you for subscribing to TradeInt\'s newsletter. We will be in touch with you very soon',
+      thanks: 'Thank you for subscribing to TradeInt\'s newsletter. We will be in touch with you very soon.',
       textInput: 'Full Name',
       emailInput: 'Email',
       button: 'Subscribe'
@@ -103,12 +103,12 @@ export default {
       },
       {
         title: '¡Mantente informado!',
-        subtitle: 'Subscríbete para recibir información sobre la evolución de TradeInt.'
+        subtitle: 'Suscríbete para recibir información sobre la evolución de TradeInt.'
       }
     ],
     why: [
       {
-        title: 'Encuentra tu~partner ideal',
+        title: 'Encuentra tu~socio ideal',
         text: 'Identifica y comunícate con socios~potenciales a través de la red~empresarial de TradeInt.'
       },
       {
@@ -117,13 +117,13 @@ export default {
       },
       {
         title: 'Conecta tu empresa~al mundo digital',
-        text: 'Agiliza y dinamiza las comunicaciones~de tu empresa más allá de las~vías tradicionales.'
+        text: 'Agiliza y dinamiza el contacto~con otras empresas más allá de las~vías tradicionales.'
       }
     ],
     cards: [
       {
         title: 'SANTIAGO GARCÍA',
-        text: 'Director de operaciones de~TradeInt. Responsable de~supervisar el desempeño general~y las finanzas de TradeInt.'
+        text: 'Director de operaciones de~TradeInt. Responsable de~la gestión general y~de las finanzas de TradeInt.'
       },
       {
         title: 'M. CONCEPCIÓN GÓMEZ',
@@ -138,7 +138,7 @@ export default {
       {
         number: 2500,
         title: 'horas de trabajo',
-        text: 'Pensar, diseñar y evaluar es~siempre todo un reto.'
+        text: 'Pensar, diseñar y evaluar es~siempre un arduo reto.'
       },
       {
         number: 225,
