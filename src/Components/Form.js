@@ -1,9 +1,14 @@
 import React from 'react'
 import vow from 'vow'
+import styled from 'styled-components'
 
 import Field from '../Primitives/Field'
 import Button from '../Primitives/Button'
 import Subtitle from '../Primitives/Subtitle'
+
+const Thanks = styled(Subtitle)`
+  color: #F9A076;
+`
 
 export default class Form extends React.Component {
   constructor () {
@@ -78,7 +83,7 @@ export default class Form extends React.Component {
     return (
       <div>
         { sent ? (
-          <Subtitle>{thanks}</Subtitle>
+          <Thanks>{thanks}</Thanks>
         ) : (
           <form onSubmit={this.handleSubmit}>
             <Field

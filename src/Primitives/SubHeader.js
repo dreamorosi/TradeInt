@@ -6,4 +6,5 @@ export default styled.h2`
   color: #FFF;
   font-size: 28px;
   line-height: 45px;
+  opacity: .8;
 `

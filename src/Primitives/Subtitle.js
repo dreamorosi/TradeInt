@@ -4,9 +4,9 @@ export default styled.p`
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: #FFF;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
-  opacity: .8;
+  opacity: 1;
   text-align: center;
   margin: 0;
 `
