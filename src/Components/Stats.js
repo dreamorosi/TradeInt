@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import AnimateNumber from 'react-animate-number'
+import VisibilitySensor from 'react-visibility-sensor'
 
 import TitleNumber from '../Primitives/TitleNumber'
 import TitleSmall from '../Primitives/TitleSmall'
@@ -17,28 +18,60 @@ const Stat = styled.div`
   }
 `
 
-export default (props) => {
-  const isInfinite = () => props.number === '∞'
+class Stats extends Component {
+  constructor () {
+    super()
 
-  const renderNumber = () => {
-    if (props.number === '∞') {
-      return props.number
-    } else if (props.number > 1000) {
-      return <AnimateNumber number={props.number} speed={100} step={100} />
-    } else {
-      return <AnimateNumber number={props.number} speed={10} />
+    this.state = {
+      isVisible: false,
+      hasShown: false
+    }
+
+    this.handleScroll = this.handleScroll.bind(this)
+    this.isInfinite = this.isInfinite.bind(this)
+    this.renderNumber = this.renderNumber.bind(this)
+  }
+
+  handleScroll (isVisible) {
+    if (isVisible && !this.state.hasShown) {
+      this.setState({
+        isVisible: true,
+        hasShown: true
+      })
     }
   }
 
-  return (
-    <Stat>
-      <TitleNumber infinite={isInfinite()}>
-        {renderNumber()}
-      </TitleNumber>
-      <TitleSmall>{props.title}</TitleSmall>
-      <ParagraphSmall>
-        {props.text.split('~').map((bit, key) => <span key={key}>{bit}<br /></span>)}
-      </ParagraphSmall>
-    </Stat>
-  )
+  isInfinite () {
+    return this.props.number === '∞'
+  }
+
+  renderNumber () {
+    if (this.state.isVisible) {
+      if (this.props.number === '∞') {
+        return this.props.number
+      } else if (this.props.number > 1000) {
+        return <AnimateNumber number={this.props.number} speed={100} step={100} />
+      } else {
+        return <AnimateNumber number={this.props.number} speed={10} />
+      }
+    }
+  }
+
+  render () {
+    return (
+      <Stat>
+        <VisibilitySensor onChange={this.handleScroll}>
+          <TitleNumber infinite={this.isInfinite()}>
+            {this.renderNumber()}
+          </TitleNumber>
+        </VisibilitySensor>
+        <TitleSmall>{this.props.title}</TitleSmall>
+        <ParagraphSmall>
+          {this.props.text.split('~').map((bit, key) => <span key={key}>{bit}<br /></span>)}
+        </ParagraphSmall>
+      </Stat>
+    )
+  }
 }
+
+export default Stats
