@@ -20,7 +20,7 @@ const SliderContent = styled.div`
   margin: 0 auto;
   z-index: 1;
   @media (max-width: 800px) {
-    width: 300px
+    width: 300px;
   }
 `
 
@@ -42,7 +42,7 @@ const SliderDeck = styled.ul`
   padding: 0;
   width: 1670px;
   @media (max-width: 800px) {
-    width: 1200px;
+    width: auto;
   }
   overflow-x: hidden;
 `
@@ -51,7 +51,11 @@ const Slide = styled.li`
   display: inline-block;
   width: 835px;
   @media (max-width: 800px) {
-    width: 300px
+    width: 300px;
+    display: block;
+    &:last-child {
+      margin-top: 50px;
+    }
   }
   height: auto;
   & > img {
@@ -59,7 +63,8 @@ const Slide = styled.li`
     display: ${props => props.current ? 'block' : 'none'};
     margin: 0 auto;
     @media (max-width: 800px) {
-      width: 300px
+      width: 300px;
+      display: block;
     }
   }
 `
